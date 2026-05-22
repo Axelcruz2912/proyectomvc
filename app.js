@@ -8,6 +8,8 @@ app.use('/users',userRouter);
 
 const PORT=3000;
 
+app.use(express.json());
+
 app.listen(PORT,()=>{
     console.log(`Server corriendo en el puerto ${PORT}`);
 });
