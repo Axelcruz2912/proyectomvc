@@ -5,3 +5,5 @@ const getUsers = (req, res) => {
 module.exports = {
     getUsers
 };
+
+console.log('User controllers');
