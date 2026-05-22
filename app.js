@@ -13,3 +13,7 @@ app.use(express.json());
 app.listen(PORT,()=>{
     console.log(`HOLAAAAAAAAAAAAAAAAAAAAAAAAAAA ${PORT}`);
 });
+
+app.get('/',(req,res)=>{
+    res.send('Hola mundo');
+});
