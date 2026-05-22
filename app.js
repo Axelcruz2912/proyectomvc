@@ -2,6 +2,10 @@ const express=require('express');
 const app=express();
 
 const userRouter=require('./routes/userRoutes');
+app.use((req,res,next)=>{
+    console.log(req.method);
+    next();
+});
 
 app.use(express.json());
 app.use('/users',userRouter);
